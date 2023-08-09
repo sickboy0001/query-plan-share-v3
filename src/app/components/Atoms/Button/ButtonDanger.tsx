@@ -6,8 +6,6 @@ type Props = {
 function ButtonDanger(props: Props) {
   const { children } = props;
 
-  // const inputClass = className === null ? classNames("w-full") : className;
-
   return (
     <button
       type="submit"

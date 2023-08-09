@@ -9,7 +9,7 @@ import Loading from "@/app/loading";
 import * as z from "zod";
 import type { Database } from "@/lib/database.types";
 import ButtonPrimary from "@/app/components/Atoms/Button/ButtonPrimary";
-import LabelInputTitle from "@/app/components/Atoms/Lable/LabelInputTitle";
+import LabelInputTitle from "@/app/components/Atoms/Label/LabelInputTitle";
 type Schema = z.infer<typeof schema>;
 
 // 入力データの検証ルールを定義

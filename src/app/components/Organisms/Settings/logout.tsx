@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import Loading from "@/app/loading";
 import type { Database } from "@/lib/database.types";
 import ButtonDanger from "@/app/components/Atoms/Button/ButtonDanger";
-import LabelInputTitle from "@/app/components/Atoms/Lable/LabelInputTitle";
 
 // ログアウト
 const Logout = () => {

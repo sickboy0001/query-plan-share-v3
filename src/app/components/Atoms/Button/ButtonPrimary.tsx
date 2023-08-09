@@ -8,8 +8,6 @@ type Props = {
 function Button(props: Props) {
   const { children } = props;
 
-  // const inputClass = className === null ? classNames("w-full") : className;
-
   return (
     <button
       type="submit"

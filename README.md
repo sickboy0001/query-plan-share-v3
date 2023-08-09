@@ -41,6 +41,6 @@ https://kaiyuusya.jp/webLog/article/syntax-highlight
 
 # 履歴
 
-## 20230810
+## 2023/08/10
 
-- DB アクセスはローカルに集中
+- DB アクセスはクライアントに集中
