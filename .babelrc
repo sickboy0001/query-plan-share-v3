@@ -1,0 +1,14 @@
+{
+      "presets": ["next/babel"],
+      "plugins": [
+        ["prismjs", {
+            "languages": ["javascript", "css", "markup","html","xml","xml-doc","sql"],
+            "plugins": ["line-numbers"],
+            // "plugins": ["line-numbers", "show-language","copy-to-clipboard", "toolbar"],
+            "theme": "okaidia",
+            "css": true
+        }]
+      ]
+  }
+//copy-to-clipboardn-button
+    //  "presets": ["@babel/preset-react"],
