@@ -1,5 +1,7 @@
+import React from "react";
 import SupabaseListener from "./components/Organisms/Common/SupabaseListener";
 import "./globals.css";
+
 // import { Inter } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });

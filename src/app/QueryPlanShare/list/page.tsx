@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 import useStore from "@/store";
-import Input from "@/app/components/Organisms/QueryPlanShare/Input";
-
+import List from "@/app/components/Organisms/QueryPlanShare/List";
 const guest_user_id = process.env.NEXT_PUBLIC_GUEST_USER_ID;
 
 function ThisPage() {
@@ -24,7 +23,7 @@ function ThisPage() {
 
   return (
     <section className="mb-2 w-5/6 mx-auto">
-      <Input userId={userId} />
+      <List userId={userId} />
       {/* <Container /> */}
     </section>
   );

@@ -44,3 +44,13 @@ https://kaiyuusya.jp/webLog/article/syntax-highlight
 ## 2023/08/10
 
 - DB アクセスはクライアントに集中
+
+## 2023/08/14
+
+- 最低限の動き、完了、リスト、表示、調整
+
+- 未 URL の公開周り、ログイン周りとの整合性
+
+- PrismJS で Babel 利用やめて、動的に Link などを取り込むようにしたら期待通り動いた。
+
+- import のパス、大文字小文字の NG で、HotReload が期待通り動かないケースあり。

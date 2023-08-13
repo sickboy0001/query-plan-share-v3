@@ -5,8 +5,8 @@ import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 import { getFileContents } from "@/lib/Papaparse";
-import { getFormattedQuery } from "@/lib/FormattedQuery";
 import QueryPlanHtmlDisp from "@/app/components/Molecules/QueryPlanHtmlDisp";
+import { getQueryFromXml } from "@/lib/QueryPlanXml";
 
 type Props = { userId: string };
 
@@ -39,32 +39,11 @@ export default function Dummy(props: Props) {
   }, []);
 
   useEffect(() => {
-    const parser = new DOMParser();
-    const dom = parser.parseFromString(sqlplan, "application/xml");
-
-    const stmsimples = dom.getElementsByTagName("StmtSimple");
-    console.log("StmtSimple:");
-    console.log(stmsimples);
     setQuerys([]);
 
-    if (stmsimples.length >= 0) {
-      for (var i = 0; i < stmsimples.length; i++) {
-        // console.log("StatementText:");
-        const stmsimple = stmsimples[i];
-        // console.log(stmsimple);
-        const query = stmsimple.getAttribute("StatementText");
-        const formatedquery = getFormattedQuery(query);
-        console.log(formatedquery);
-        if (formatedquery) {
-          setQuerys((prequery) => {
-            return [...prequery, formatedquery];
-          });
-        }
-        // setQuerys(["select * from tenmf", "select * from kanmf"]);
-        // setQuerys((prequerys) => [...prequerys, formatedquery]);
-      }
-    }
-    // const dom3 = dom2.getElementsByClassName("StatementText");
+    let querys: string[] = getQueryFromXml(sqlplan);
+
+    setQuerys(querys);
   }, [sqlplan]);
 
   return (

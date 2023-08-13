@@ -4,17 +4,15 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import { DocumentDuplicateIcon } from "@heroicons/react/24/outline";
+import {
+  DocumentDuplicateIcon,
+  PuzzlePieceIcon,
+  PencilSquareIcon,
+} from "@heroicons/react/24/outline";
 
 import { description } from "@/app/constants/TopStart";
 
 const Menu = [
-  // {
-  //   name: "iikoto-Mittu",
-  //   description: "毎晩寝る前に、1日で良かったことを3つ書く",
-  //   icon: DocumentDuplicateIcon,
-  //   href: "/iikotomittu/top",
-  // },
   {
     name: "Result",
     description: "QueryPlanShare-Result ",
@@ -30,13 +28,14 @@ const Menu = [
   {
     name: "Input",
     description: "QueryPlanShare-Input ",
-    icon: DocumentDuplicateIcon,
+    // icon: DocumentDuplicateIcon,
+    icon: PencilSquareIcon,
     href: "/QueryPlanShare/input",
   },
   {
     name: "Dummy",
     description: "QueryPlanShare-Dummy",
-    icon: DocumentDuplicateIcon,
+    icon: PuzzlePieceIcon,
     href: "/QueryPlanShare/dummy",
   },
   {
@@ -49,7 +48,7 @@ const Menu = [
 
 // プロフィール
 const Start = () => {
-  let markdownString = description[0];
+  let markdownString = description;
 
   return (
     <div>

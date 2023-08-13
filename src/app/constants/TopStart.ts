@@ -1,4 +1,4 @@
-export const description = [
+export const description = 
     `
     - QueryPlanを共有するためのもの
         - PlanをXml形式のPlanテキストで登録
@@ -15,6 +15,6 @@ export const description = [
     - 掲示板など配置も検討したほうがいいのでは？
         - 実際には別再度で質疑をこたえていくほうが、横のつながりも持ちやすいという認識
     - 評価者・ゲスト（非ログイン者）の機能差異はなしでいいので、PT2ベースでの機能整理が必要
-    `
-    ]
+    `.trim()
+    
     
